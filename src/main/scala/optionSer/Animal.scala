@@ -1,0 +1,5 @@
+package optionSer
+
+trait Animal {
+
+}
