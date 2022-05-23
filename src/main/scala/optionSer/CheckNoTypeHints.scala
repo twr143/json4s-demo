@@ -1,10 +1,10 @@
 package optionSer
 
+import org.json4s._
 import org.json4s.native.Serialization
 import org.json4s.{Formats, NoTypeHints}
 import org.json4s.native.Serialization.write
 import org.json4s.jackson.JsonMethods.parse
-import org.json4s._
 object CheckNoTypeHints {
 
   def main(args: Array[String]): Unit =

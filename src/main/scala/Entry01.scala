@@ -9,12 +9,12 @@ object Entry01 {
   sealed trait DomainObject
   case class Child(name: String, age: Int, birthdate: Option[java.util.Date]) extends DomainObject
   case class Address(street: String, city: String) extends DomainObject
-  case class Person(name: String, address: Address, children: List[Child]) extends DomainObject
+  case class Person(name: String, address: Option[Address], children: Option[List[Child]]) extends DomainObject
   def main(args: Array[String]): Unit =
   {
-    val ser = write(Child("Mary", 5, None))
-    println(ser)
-    val ser2 = write(Person("Person", null, null))
-    println(ser2)
+//    val ser = write(Child("Mary", 5, None))
+//    println(ser)
+//    val ser2 = write(Person("Person", None, None))
+//    println(ser2)
   }
 }
